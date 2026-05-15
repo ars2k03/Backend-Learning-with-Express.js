@@ -7998,5 +7998,13 @@
         "email": "kjonesrr@scientificamerican.com",
         "gender": "Male",
         "job_title": "Research Associate"
+    },
+    {
+        "id": 1001,
+        "first_name": "A R S",
+        "last_name": "Arafat",
+        "email": "arafatsohan2003@gmail.com",
+        "gender": "Male",
+        "job_title": "Software Eng"
     }
 ]
