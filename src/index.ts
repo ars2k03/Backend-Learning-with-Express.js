@@ -30,13 +30,16 @@ app.get('/users', (req : Request, res : Response) => {
   return res.status(200).send(html);
 })
 
-
 //REST API
 app.route('/api/users').get((req : Request, res : Response) => {
-  return res.status(200).json(file);
-}).post((req : Request, res : Response) => {
-  const body = req.body;
+  res.setHeader('X-Me', 'A R S Arafat');
 
+  console.log(req.headers);
+  
+  return res.status(200).json(file);
+})
+.post((req : Request, res : Response) => {
+  const body = req.body;
   file.push({
     id : file.length + 1,
     ...body,
